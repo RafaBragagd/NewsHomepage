@@ -15,7 +15,6 @@
 }
 body{
     padding: 3vw;
-    min-width: calc(1045px - 3vw);
 }
 header{
     display: flex;
