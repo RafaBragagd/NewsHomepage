@@ -1,0 +1,306 @@
+@font-face {
+    font-family: Inter;
+    src: url(../font/Inter-Regular.ttf);
+ }
+ @font-face {
+    font-family: Inter;
+    src: url(../font/Inter-Bold.ttf);
+    font-weight: 700;
+ }
+
+@font-face {
+   font-family: Inter;
+   src: url(../font/Inter-ExtraBold.ttf);
+   font-weight: 800;
+}
+body{
+    padding: 3vw;
+    min-width: calc(1045px - 3vw);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: calc(10px + 5vh);
+}
+
+a{
+    font-family: Inter;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.MenuList{
+    list-style: none;
+}
+.MenuList .MenuLink{
+    display: inline;
+    margin-left: 3vw;
+}
+.MenuList li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 56%);
+}
+.MenuList li a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.mobile{
+    display: none;
+}
+.Apresentacao{
+    font-family: Inter;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 600px 150px;
+    grid-column-gap: 3vw;
+    grid-row-gap: 15vh;
+}
+
+.Destaque{
+    grid-area: 1 / 1 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 375px 225px;
+}
+.Destaque img{
+    grid-area: 1 / 1 / 2 / 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.Destaque h1{
+    font-size: 70px;
+    line-height: 1;
+    transform: translateY(-20px);
+}
+.Destaque .Conteudo{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.Destaque .Conteudo p{
+    font-size: 20px;
+    color: hsl(0, 0%, 47%);
+    line-height: 1.5;
+}
+.Destaque .Conteudo button{
+    border-radius: 0;
+    border: none;
+    width: 50%;
+    padding: 15px;
+    font-size: 20px;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    cursor: pointer;
+}
+.Destaque .Conteudo button:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+/*Reportagem Lista*/
+.Lista{
+    color: hsl(36, 100%, 99%);
+    font-size: 15px;
+    padding: 1vw 3vw;
+    background-color: hsl(240, 100%, 5%);
+}
+.Lista ul{
+    padding: 0;
+
+}
+.Lista li{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top: 2px solid hsl(0, 0%, 47%);
+}
+.Lista li:first-child{
+    padding-top: 1px;
+    border-top: none;
+}
+.Lista a{
+    color: hsl(36, 100%, 99%);
+}
+.Lista a:hover{
+    color: hsl(35, 77%, 62%);
+}
+.Lista h2{
+    color: hsl(35, 77%, 62%);
+    font-size: 40px;
+}
+.Lista h3{
+    font-size: 20px;
+}
+.Lista ul{
+    list-style: none;
+}
+
+/*Reportagens*/
+.Reportagem{
+    display: flex;
+}
+.Reportagem .Informacao{
+    margin-left: 2vw;
+}
+.Reportagem .Informacao span{
+    font-weight: 800;
+    color: hsl(0, 0%, 75%);
+    font-size: 30px;
+}
+.Reportagem .Informacao a{
+    color: #000;
+}
+.Reportagem .Informacao a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.Reportagem .Informacao p{
+    font-size: 15px;
+    color: hsl(0, 0%, 47%);
+    line-height: 1.5;
+}
+@media (max-width: 1176px){
+    .Destaque h1{
+        font-size: 65px;
+    }
+    .Destaque .Conteudo p{
+        font-size: 17px;
+    }
+    .Lista h2{
+        font-size: 38px;
+    }
+    .Lista h3{
+        font-size: 18px;
+    }
+    .Lista p{
+        font-size: 16px;
+    }
+    .Reportagem .Informacao span{
+        font-size: 27px;
+    }
+    .Reportagem .Informacao h3{
+        font-size: 15px;
+    }
+    .Reportagem .Informacao p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1091px){
+    .Apresentacao{
+        grid-template-rows: 480px 150px;
+    }
+    .Destaque{
+        grid-template-rows: 281.25px 168.75px;
+    }
+    .Destaque h1{
+        font-size: 60px;
+    }
+    .Destaque .Conteudo p{
+        font-size: 15px;
+    }
+    .Lista li{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .Lista h2{
+        font-size: 35px;
+    }
+    .Lista h3{
+        font-size: 15px;
+    }
+    .Lista p{
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width:500px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .Apresentacao{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile{
+        display: initial;
+    }
+    #MenuButton,
+    #CloseButton{
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        width: 50px;
+    }
+    .MenuList{
+        visibility: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-right: 40%;
+        height: 101vh;
+        background-color: hsl(36, 100%, 99%);
+        transform: translateX(100%);
+        z-index: 1;
+    }
+    .MenuList .MenuLink{
+        display: block;
+        margin: 40px 0;
+    }
+    .MenuList li:first-child{
+        display: block;
+        transform: translateX(190%);
+    }
+    .MenuList li a{
+        color: #000;
+        font-size: 20px;
+    }
+    .MenuList li a:hover{
+        color: hsl(5, 85%, 63%);
+    }
+    .MenuList::after{
+        content: "";
+        position: absolute;
+        background-color: #00000070;
+        height: 100%;
+        width: 140%;
+        top: -20px;
+        left: -140%;
+    }
+    .Ativo{
+        visibility: visible;
+        transform: translateX(0);
+        transition: all .5s ease-in-out;
+    }
+    .NAtivo{
+        visibility: hidden;
+        transform: translateX(100%);
+        transition: all .15s ease-in-out;
+    }
+
+    
+    
+    .Destaque{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .Destaque h1{
+        font-size: 45px;
+        font-weight: 800;
+    }
+    .Destaque .Conteudo{
+        transform: translateY(-75px);
+    }
+
+    .Reportagem{
+        margin: 5vw 0;
+    }
+    .Reportagem img{
+        width: 30vw;
+    }
+}
