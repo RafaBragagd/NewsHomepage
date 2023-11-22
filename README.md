@@ -9,5 +9,5 @@ Foi utilizado também os conceitos do display grid para criar as diferentes disp
 
 Desktop layout:
 ![Desktop layout](https://github.com/RafaBragagd/NewsHomepage/blob/master/Desktop%20News.png)
-Mobile Layout:
+Mobile Layout:<br>
 ![Mobile layout](https://github.com/RafaBragagd/NewsHomepage/blob/master/Mobile%20News.png)
