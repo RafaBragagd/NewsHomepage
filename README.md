@@ -6,8 +6,5 @@ Entre as atividades que foram realizadas se encontra a adaptabilidade do site a 
 Foi utilizado também os conceitos do display grid para criar as diferentes disposições do site.
 
 ## Screenshots
-
-Desktop layout:
 ![Desktop layout](https://github.com/RafaBragagd/NewsHomepage/blob/master/Desktop%20News.png)
-Mobile Layout:<br>
 ![Mobile layout](https://github.com/RafaBragagd/NewsHomepage/blob/master/Mobile%20News.png)
