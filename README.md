@@ -7,5 +7,11 @@ Foi utilizado também os conceitos do display grid para criar as diferentes disp
 Site disponibilizado em: https://lambent-paprenjak-515e5d.netlify.app
 
 ## Screenshots
+### Layout para Desktop
 ![Desktop layout](https://github.com/RafaBragagd/NewsHomepage/blob/master/Desktop%20News.png)
-![Mobile layout](https://github.com/RafaBragagd/NewsHomepage/blob/master/Mobile%20News.png)
+
+### Layout para Mobile
+
+<p align="center">
+  <img src="https://github.com/RafaBragagd/NewsHomepage/blob/master/Mobile%20News.png" alt="Mobile layout">
+</p>
